@@ -17,10 +17,10 @@ Material:
   stringTagMap: {}
   disabledShaderPasses:
   - DistortionVectors
+  - MOTIONVECTORS
   - TransparentDepthPrepass
   - TransparentDepthPostpass
   - TransparentBackface
-  - MOTIONVECTORS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -53,7 +53,7 @@ Material:
         m_Scale: {x: -0.45, y: 0.45}
         m_Offset: {x: 0, y: 0}
     - _DetailMap:
-        m_Texture: {fileID: 2800000, guid: 9b74db50026cc754782a13484d98d357, type: 3}
+        m_Texture: {fileID: 2800000, guid: e7c2e65acdc01f04a9b93d70211df80b, type: 3}
         m_Scale: {x: 0.88, y: 0.88}
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
@@ -93,7 +93,7 @@ Material:
         m_Scale: {x: 0.7, y: -0.7}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
-        m_Texture: {fileID: 2800000, guid: ca4b66feb3e8d504cbccd1204f838c24, type: 3}
+        m_Texture: {fileID: 2800000, guid: e6484e53d3fee684c92924de5aeac8b3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -101,7 +101,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: cfdf6b723c1ca484fa6ae98ad54d2e12, type: 3}
+        m_Texture: {fileID: 2800000, guid: dc29e27580b7c934ca8139c37bc4360c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMapOS:
@@ -144,6 +144,7 @@ Material:
     - _AORemapMax: 0.44225827
     - _AORemapMin: 0.18477333
     - _ATDistance: 1
+    - _AddPrecomputedVelocity: 0
     - _AlbedoAffectEmissive: 0
     - _AlphaCutoff: 0.5
     - _AlphaCutoffEnable: 0
@@ -241,6 +242,7 @@ Material:
     - _SpecularAAScreenSpaceVariance: 0.1
     - _SpecularAAThreshold: 0.2
     - _SpecularHighlights: 1
+    - _SpecularOcclusionMode: 1
     - _SrcBlend: 1
     - _StencilRef: 2
     - _StencilRefDepth: 0
@@ -262,6 +264,7 @@ Material:
     - _ThicknessMultiplier: 1
     - _TransmissionEnable: 1
     - _TransparentBackfaceEnable: 0
+    - _TransparentCullMode: 2
     - _TransparentDepthPostpassEnable: 0
     - _TransparentDepthPrepassEnable: 0
     - _TransparentSortPriority: 0
@@ -276,6 +279,7 @@ Material:
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
     - _ZTestModeDistortion: 4
+    - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.68872374, g: 0.7128686, b: 0.7264151, a: 1}
